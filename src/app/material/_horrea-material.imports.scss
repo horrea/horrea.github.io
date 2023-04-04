@@ -1,0 +1,4 @@
+@use "@angular/";
+@use "@material/button/button" as button;
+
+@include button.core-styles;

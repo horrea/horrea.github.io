@@ -49,10 +49,8 @@ $dark-body-background: mat.get-color-from-palette(
 // apply light theme by default
 @include mat.core-theme($light-theme);
 
-
 // include material components themes
-@include mat.datepicker-theme($light-theme);
-@include mat.stepper-theme($light-theme);
+@include mat.all-component-themes($light-theme);
 // include custom components themes
 
 
@@ -62,9 +60,7 @@ body {
 
 .horrea-dark-theme {
   background-color: $dark-body-background;
-  @include mat.core-color($dark-theme);
-  @include mat.datepicker-color($dark-theme);
-  @include mat.stepper-color($dark-theme);
+  @include mat.all-component-colors($dark-theme);
 
   body {
     background-color: $dark-body-background;
