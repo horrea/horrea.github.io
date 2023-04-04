@@ -22,6 +22,16 @@
         "dist/rex-core/rex-core",
         "dist/rex-core"
       ],
+      "@rex/model": [
+        "projects/rex-model/src/public-api",
+        "dist/rex-model/rex-model",
+        "dist/rex-model"
+      ],
+      "@rex/store": [
+        "projects/rex-store/src/public-api",
+        "dist/rex-store/rex-store",
+        "dist/rex-store"
+      ]
     },
     "target": "ES2022",
     "module": "ES2022",

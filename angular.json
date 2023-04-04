@@ -132,6 +132,72 @@
           }
         }
       }
+    },
+    "rex-model": {
+      "projectType": "library",
+      "root": "projects/rex-model",
+      "sourceRoot": "projects/rex-model/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/rex-model/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/rex-model/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/rex-model/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/rex-model/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    },
+    "rex-store": {
+      "projectType": "library",
+      "root": "projects/rex-store",
+      "sourceRoot": "projects/rex-store/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/rex-store/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/rex-store/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/rex-store/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/rex-store/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   }
 }
