@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { environment } from 'src/environments/environment';
-import { EnvironmentModule } from 'src/environments/environment.module';
+import { EnvironmentModule } from "@rex/core";
 import { AppComponent } from './app.component';
 import { HorreaMaterialModule } from './material/horrea-material.module';
 import { AppRoutingModule } from './routing/app-routing.module';

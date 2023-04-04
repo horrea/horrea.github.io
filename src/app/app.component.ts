@@ -1,5 +1,5 @@
 import { Component, Inject } from '@angular/core';
-import { Environment, ENVIRONMENT } from 'src/environments/environment.model';
+import { Environment, ENVIRONMENT } from '@rex/core';
 
 @Component({
   selector: 'app-root',
