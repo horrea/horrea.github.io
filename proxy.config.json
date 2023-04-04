@@ -1,0 +1,9 @@
+{
+  "/github": {
+    "target": "https://api.github.com/repos/horrea/data/contents/horrea",
+    "secure": false,
+    "pathRewrite": {
+      "^/github": ""
+    }
+  }
+}
