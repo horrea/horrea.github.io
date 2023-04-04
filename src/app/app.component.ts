@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
+import { Environment, ENVIRONMENT } from 'src/environments/environment.model';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'horrea.github.io';
+
+  constructor(@Inject(ENVIRONMENT) public env: Environment) { }
 }
