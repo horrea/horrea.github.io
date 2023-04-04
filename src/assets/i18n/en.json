@@ -1,0 +1,20 @@
+{
+    "ui": {
+        "nav": {
+            "jobs": "Offers",
+            "condidates": "Condidates",
+            "contracts": "My contracts",
+            "applications": "My applications",
+            "offers": "My offers",
+            "contact": "Contact"
+        },
+        "lang": {
+            "en": "English",
+            "fr": "French"
+        },
+        "legals": {
+            "privacy": "Privacy policy",
+            "terms": "Terms of services"
+        }
+    }
+}
