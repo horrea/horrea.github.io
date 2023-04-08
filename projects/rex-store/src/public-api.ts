@@ -2,6 +2,9 @@
  * Public API Surface of rex-store
  */
 
-export * from './lib/rex-store.service';
-export * from './lib/rex-store.component';
-export * from './lib/rex-store.module';
+// Ui
+export { LanguagesState } from './lib/ui/languages.state';
+export { NavItemsState } from './lib/ui/nav-items.state';
+export { SpinnerState } from './lib/ui/spinner.state';
+export { ThemesState } from './lib/ui/themes.state';
+export { UiFacade } from './lib/ui/ui.facade';
