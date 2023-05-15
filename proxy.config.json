@@ -5,5 +5,12 @@
     "pathRewrite": {
       "^/github": ""
     }
+  },
+  "/templates": {
+    "target": "http://localhost:4200/assets/tools/templates.json",
+    "secure": false,
+    "pathRewrite": {
+      "^/templates": ""
+    }
   }
 }

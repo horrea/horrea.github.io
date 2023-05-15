@@ -5,7 +5,11 @@
 import { Environment } from "@rex/core";
 
 export const environment: Environment = {
-  production: false
+  production: false,
+  githubClientId: '2d82644a70572083bf47',
+  githubLoginUrl: 'https://github.com/login/oauth/authorize',
+  githubTokenUrl: 'https://github.com/login/oauth/token',
+  githubScopes: 'user:email'
 };
 
 /*

@@ -1,0 +1,4 @@
+<form [formGroup]="editorForm">
+    <editor formControlName="content" id="rex-blog-content" 
+    [init]="editorFacade.editorOptions$ | async | orDefault:undefined"></editor>
+</form>

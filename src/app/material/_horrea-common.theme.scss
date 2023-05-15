@@ -1,0 +1,81 @@
+
+@use 'sass:map';
+@use '@angular/material' as mat;
+
+@mixin horrea-common-color($theme) {
+  // Get the color config from the theme.
+  $color-config: mat.get-color-config($theme);
+
+  // Get the primary color palette from the color-config.
+  $primary-palette: map.get($color-config, 'primary');
+  $accent-palette: map.get($color-config, 'accent');
+  $background-palette: map.get($color-config, 'background');
+  $foreground-palette: map.get($color-config, 'foreground');
+
+  .color-primary {
+    color: mat.get-color-from-palette($primary-palette, default);
+  }
+
+  .bkg-primary {
+    background-color: mat.get-color-from-palette($primary-palette, default);
+  }
+
+  .bkg-accent {
+    background-color: mat.get-color-from-palette($accent-palette, default);
+  }
+
+  .horrea-toolbar {
+    background-color: transparent;
+  }
+
+  .rex-toolbar {
+    background-color: transparent;
+  }
+  
+  .text-muted {
+    color: mat.get-color-from-palette($foreground-palette, disabled);
+  }
+
+  .border-bottom {
+    border-bottom: solid 1px mat.get-color-from-palette($foreground-palette, divider);
+  }
+
+  .rex-route-active {
+    background-color: mat.get-color-from-palette($background-palette, selected-button);
+  }
+  .rex-app-bar {
+    background-color: mat.get-color-from-palette($background-palette, app-bar);
+  }
+
+  .rex-footer {
+    background-color: mat.get-color-from-palette($background-palette, background);
+    border-color: mat.get-color-from-palette($foreground-palette, divider);
+  }
+  
+}
+
+@mixin horrea-common-typography($theme) {
+  $typography-config: mat.get-typography-config($theme);
+
+  .horrea-font-family {
+    font-family: mat.font-family($typography-config);
+  }
+  .rex-footer ul {
+    line-height: mat.line-height($typography-config, 'body-2');
+    font-size: mat.font-size($typography-config, 'body-2');
+  }
+}
+
+
+@mixin horrea-common-theme($theme) {
+  $color-config: mat.get-color-config($theme);
+
+  @if $color-config != null {
+    @include horrea-common-color($theme);
+  }
+
+  $typography-config: mat.get-typography-config($theme);
+  @if $typography-config != null {
+    @include horrea-common-typography($theme);
+  }
+}

@@ -1,0 +1,26 @@
+{
+    "lang": {
+        "en": "English",
+        "fr": "French"
+    },
+    "theme": {
+        "LIGHT": "Light",
+        "DARK": "Dark"
+    },
+    "footer": {
+        "legals": {
+            "privacy": "Privacy policy",
+            "terms": "Terms of services"
+        }
+    },
+    "blog": {
+        "nav": {
+            "home": "Home",
+            "login": "Login",
+            "blog": "Blog",
+            "indicators": "Indicators",
+            "search": "Search",
+            "contact": "Reach out"
+        }
+    }
+}

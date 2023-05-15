@@ -1,0 +1,31 @@
+<header>
+  <div class="mat-elevation-z6 rex-header-toolbar">
+    <mat-toolbar>
+      <button mat-icon-button (click)="drawer.toggle()" *ngIf="drawerToggler$| async">
+          <mat-icon>menu</mat-icon>
+      </button>
+      <span>{{editorTitle$ | async }}</span>    
+  </mat-toolbar>
+</div>
+</header>
+<mat-drawer-container>
+    <mat-drawer #drawer [mode]="drawerMode$ | async | orDefault: 'side'" [opened]="drawerOpen$| async">
+      <mat-nav-list>
+        <a mat-list-item [routerLink]="['simple-blog']" routerLinkActive="rex-route-active">
+          {{'tools.editors.simple-blog.title' | translate}}
+        </a>
+        <a mat-list-item [routerLink]="['blog-from-template']" routerLinkActive="rex-route-active">
+          {{'tools.editors.blog-from-template.title' | translate}}
+        </a>
+        <a mat-list-item [routerLink]="['blog-template']" routerLinkActive="rex-route-active">
+          {{'tools.editors.blog-template.title' | translate}}
+        </a>
+      </mat-nav-list>
+    </mat-drawer>
+    <mat-drawer-content>
+      <main class="rex-edior-content">
+        <router-outlet></router-outlet>
+      </main>   
+    </mat-drawer-content>
+</mat-drawer-container>
+ 

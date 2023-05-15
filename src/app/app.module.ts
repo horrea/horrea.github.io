@@ -8,10 +8,10 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { EnvironmentModule } from "@rex/core";
 import { environment } from 'src/environments/environment';
 import { AppComponent } from './app.component';
-import { AppBarModule } from './common/appbar/appbar.module';
 import { FooterModule } from './common/footer/footer.module';
+import { NavBarModule } from './common/navbar/navbar.module';
 import { HorreaMaterialModule } from './material/horrea-material.module';
-import { AppRoutingModule } from './routing/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { AppStoreModule } from './store/app-store.module';
 
 
@@ -31,7 +31,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppStoreModule,
     BrowserAnimationsModule,
     HorreaMaterialModule,
-    AppBarModule,
+    NavBarModule,
     FooterModule,
     EnvironmentModule.forRoot(environment),
     TranslateModule.forRoot({

@@ -1,4 +1,8 @@
-<rex-appbar></rex-appbar>
+<header class="rex-app-bar mat-elevation-z6">
+  <a mat-button [routerLink]="['/welcome']" routerLinkActive="nav-active">
+      {{"ui.nav.home" | translate}}
+  </a>
+</header>
 <main class="rex-content">
   <router-outlet></router-outlet>
 </main>

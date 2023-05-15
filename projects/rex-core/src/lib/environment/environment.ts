@@ -2,6 +2,10 @@ import { InjectionToken, ModuleWithProviders, NgModule, Optional, SkipSelf } fro
 
 export interface Environment {
     production: boolean;
+    githubLoginUrl: string;
+    githubTokenUrl: string;
+    githubClientId: string;
+    githubScopes: string;
 }
 
 export const ENVIRONMENT = new InjectionToken<Environment>('ENVIRONMENT');

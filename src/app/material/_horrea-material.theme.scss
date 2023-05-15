@@ -1,4 +1,5 @@
 @use '@angular/material' as mat;
+@use 'horrea-common.theme' as horrea;
 
 @include mat.core();
 
@@ -52,6 +53,7 @@ $dark-body-background: mat.get-color-from-palette(
 // include material components themes
 @include mat.all-component-themes($light-theme);
 // include custom components themes
+@include horrea.horrea-common-theme($light-theme);
 
 
 body {
@@ -61,6 +63,7 @@ body {
 .horrea-dark-theme {
   background-color: $dark-body-background;
   @include mat.all-component-colors($dark-theme);
+  @include horrea.horrea-common-color($light-theme);
 
   body {
     background-color: $dark-body-background;

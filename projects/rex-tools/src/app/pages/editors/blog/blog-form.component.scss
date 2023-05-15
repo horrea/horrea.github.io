@@ -1,0 +1,17 @@
+:host {
+    display: block;
+    form {
+        mat-form-field {
+            width: 100%;
+            margin: 16px 0px ;
+        }
+        .rex-blog-form-actions {
+            display: flex;
+            justify-content: end;
+            padding: 16px 0px;
+            button {
+                margin: 0px 8px;
+            }
+        }
+    }
+}

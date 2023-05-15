@@ -1,0 +1,25 @@
+<nav class="nav-main">
+    <a mat-button [routerLink]="['/']" routerLinkActive="router-link-active">
+        EdiTools
+    </a>
+    <div class="spacer"></div>
+    <button mat-button (click)="onClickLogin.emit()">
+        {{"tools.nav.login" | translate}}
+    </button>
+    <button mat-icon-button [matMenuTriggerFor]="themeMenu">
+        <mat-icon fontIcon="format_color_fill"></mat-icon>
+    </button>
+</nav>
+
+<mat-menu #themeMenu="matMenu">
+    <button *ngFor="let theme of themes" mat-menu-item (click)="onThemeChanges.emit(theme.theme)">
+    <mat-icon>{{theme.icon}}</mat-icon> 
+    <span>
+        {{theme.theme | prefix:'theme.' | translate}}
+    </span>
+    <span  *ngIf="theme.current">
+        <mat-icon>done</mat-icon>
+    </span>
+    </button>
+</mat-menu>
+

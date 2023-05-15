@@ -1,0 +1,25 @@
+:host{
+    display: block;
+
+    .rex-editors-header {
+        padding-bottom: 10px;
+    }
+
+    mat-drawer-container {
+        width: 100%;
+        min-height: calc(100vh - 65px);
+
+        mat-drawer {
+            min-width: 200px;
+            max-width: 250px;
+        }
+    }
+    .rex-edior-content {
+        padding: 16px;
+    }
+    @media (max-width: 959px) {
+        .rex-edior-content {
+            padding: 16px 8px;
+        }       
+    }
+}
