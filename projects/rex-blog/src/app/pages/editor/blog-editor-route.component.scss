@@ -1,0 +1,12 @@
+:host {
+    display: block;
+
+    rex-editor-navbar {
+        z-index: 10;
+        position: sticky;
+        top: 0;
+    }
+    mat-drawer-container {
+        height: 100vh;
+    }
+}

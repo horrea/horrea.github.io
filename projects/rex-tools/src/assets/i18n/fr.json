@@ -1,0 +1,60 @@
+{
+    "lang": {
+        "en": "English",
+        "fr": "French"
+    },
+    "theme": {
+        "LIGHT": "Light",
+        "DARK": "Dark"
+    },
+    "footer": {
+        "legals": {
+            "privacy": "Privacy policy",
+            "terms": "Terms of services"
+        }
+    },
+    "tools": {
+        "route": "Cliquez pour essayer cette outils",
+        "welcome": {
+            "header": "Explorez nos services et outils à travers des exemples disponibes pour vous sans aucun risque sur vos données",
+            "subheader": "Nous voulons que vous présenter nos services et outils ci-dessous. Nous vous invitons à les essayer en cliquant sur chacun des outils. Vous pouvez également combiner l'usage de plusieurs outils pour satisfaire votre besoin. Pour vos besoins specifiques, n'hesitez pas à nous contacter. Ca nous fera plaisir de vous accompagner."
+        },
+        "editors": {
+            "title": "Ensemble d'outil d'edition pour vos contracts, courriel, communication en ligne",
+            "desc": "Il s'agit d'un ensemble d'outils d'edition en ligne. Ces outils vous permettent d'créer des contracts, des courriels ou de belles communications à partir de multiples templates disponibles pour vous.  Aucune de vos donnees ne sera envoyée en dehors de votre navigateur.",
+            "blog": {
+                "title": "Enter your future blog title",
+                "template": "Select blog template",
+                "tags": "Add keys words for this article (click enter)",
+                "generated-code": "Generated code",
+                "submit": "Submit",
+                "export": "Exporter en JSON",
+                "reset": "Save"
+            },
+            "simple-blog": {
+                "title": "Simple Blog",
+                "desc": "Simple Blog"
+            },
+            "blog-from-template": {
+                "title":"Blog from template",
+                "desc":"Blog from template"
+            },
+            "blog-template": {
+                "title":"Blog template",
+                "desc":"Create new Blog template"
+            }
+        },
+        "indicators": {
+            "title": "Ensemble d'outils de génération de resprésentations graphiques d'indicateurs",
+            "desc": "Générez resprésentations graphiques à partir de vos données sans aucun risque. Le traitement de vos données se fait uniquement sur votre navigateur. Aucune de vos donnees ne sera envoyée en dehors de votre navigateur."
+        },
+        "nav": {
+            "home": "Home",
+            "login": "Login",
+            "blog": "Blog",
+            "indicators": "Indicators",
+            "search": "Search",
+            "contact": "Reach out"
+        }
+    }
+}

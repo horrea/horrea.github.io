@@ -1,0 +1,62 @@
+<nav class="nav-internal">
+    <ul>
+        <li>
+            <a mat-button [routerLink]="['/welcome']" routerLinkActive="nav-active">
+                    {{"ui.nav.home" | translate}}
+            </a>
+        </li>
+        <li>
+            <a mat-button [routerLink]="['/blog']" routerLinkActive="nav-active">
+                {{"ui.nav.blog" | translate}}
+            </a>
+        </li>
+        <li>
+            <button mat-button routerLinkActive="nav-active"  [matMenuTriggerFor]="productMenu">
+                {{"ui.nav.products" | translate}}
+                <mat-icon>expand_more</mat-icon>
+            </button>
+        </li>    
+        <li>
+            <a mat-button [routerLink]="['/contact']" routerLinkActive="nav-active">
+                {{"ui.nav.contact" | translate}}
+            </a>
+        </li>
+    </ul>
+    <div class="spacer"></div>
+    <ul>
+        <li class="nav-search">
+            <button mat-stroked-button>
+                <mat-icon>search</mat-icon>
+                <span>{{"ui.nav.search" | translate}}</span>
+            </button>
+        </li>
+        <li>
+            <button mat-icon-button [matMenuTriggerFor]="themeMenu">
+                <mat-icon>format_color_fill</mat-icon>
+            </button>
+        </li>
+        
+    </ul>
+</nav>
+
+<mat-menu #themeMenu="matMenu">
+    <button *ngFor="let theme of themes" mat-menu-item (click)="onThemeChanges.emit(theme.theme)">
+        <mat-icon>{{theme.icon}}</mat-icon> 
+        <span>
+            {{theme.theme | prefix:'ui.theme.' | translate}}
+        </span>
+        <span  *ngIf="theme.current">
+            <mat-icon>done</mat-icon>
+        </span>
+    </button>
+</mat-menu>
+
+<mat-menu #productMenu="matMenu">
+    <menu mat-menu-item>Hergla</menu>
+    <menu mat-menu-item>REX</menu>
+</mat-menu>
+
+
+
+
+

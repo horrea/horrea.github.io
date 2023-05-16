@@ -8,6 +8,7 @@
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
+    "strictPropertyInitialization": false,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
@@ -16,6 +17,23 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "paths": {
+      "@rex/core": [
+        "projects/rex-core/src/public-api",
+        "dist/rex-core/rex-core",
+        "dist/rex-core"
+      ],
+      "@rex/model": [
+        "projects/rex-model/src/public-api",
+        "dist/rex-model/rex-model",
+        "dist/rex-model"
+      ],
+      "@rex/store": [
+        "projects/rex-store/src/public-api",
+        "dist/rex-store/rex-store",
+        "dist/rex-store"
+      ]
+    },
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,

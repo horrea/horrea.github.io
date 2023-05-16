@@ -1,0 +1,46 @@
+{
+    "ui": {
+        "nav": {
+            "home": "Bienvenue",
+            "products": "Nos produits",
+            "blog": "Blog",
+            "indicators": "Indicateurs",
+            "search": "Recherche",
+            "contact": "Nous rejoindre"
+        },
+        "lang": {
+            "en": "English",
+            "fr": "French"
+        },
+        "theme": {
+            "LIGHT": "Claire",
+            "DARK": "Sembre"
+        },
+        "legals": {
+            "privacy": "Donneés privées",
+            "terms": "Termes du service"
+        }
+    },
+    "footer" : {
+        "services": {
+            "title":"Nos services",
+            "editors": "Editeurs en ligne",
+            "blockchain": "Blockchain applicative",
+            "support": "Support technique"
+        },
+        "about": {
+            "title": "A propos",
+            "company": "Entreprise",
+            "team": "Equipe",
+            "legacey": "Realisations"
+
+        },
+        "blog": {
+            "title": "Blog",
+            "editors": "Editeurs en ligne",
+            "technologies": "Technologies",
+            "blockchain": "Blockchain",
+            "finance": "Finance"
+        }
+    }
+}

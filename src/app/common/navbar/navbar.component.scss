@@ -1,0 +1,24 @@
+:host {
+    display: block;
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 4px 16px;
+        .spacer {
+            flex-grow: 2;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            li.nav-search {
+                button {
+                    justify-content: flex-start;
+                    min-width: 200px;
+                }
+            }
+        }
+    }
+}

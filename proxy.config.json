@@ -1,0 +1,16 @@
+{
+  "/github": {
+    "target": "https://api.github.com/repos/horrea/data/contents/horrea",
+    "secure": false,
+    "pathRewrite": {
+      "^/github": ""
+    }
+  },
+  "/templates": {
+    "target": "http://localhost:4200/assets/tools/templates.json",
+    "secure": false,
+    "pathRewrite": {
+      "^/templates": ""
+    }
+  }
+}

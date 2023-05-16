@@ -1,0 +1,4 @@
+<rex-blog-form 
+[templates]="editorFacade.blogTemplates$ | async | valueOrDefault: []" 
+[tinyOptions]="editorFacade.editorOptions$ | async | valueOrDefault: undefined"
+(saveBlogArticle)="submitBlogForm($event)"></rex-blog-form>
