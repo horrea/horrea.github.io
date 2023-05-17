@@ -2,7 +2,7 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
-  "cli": {
+  "cli" : {
     "packageManager": "npm"
   },
   "projects": {
@@ -31,16 +31,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              {
-                "glob": "**/*",
-                "input": "projects/rex-tools/src/assets",
-                "output": "assets/tools/"
-              },
-              {
-                "glob": "**/*",
-                "input": "node_modules/tinymce",
-                "output": "assets/tinymce/"
-              }
+              {"glob": "**/*", "input": "projects/rex-tools/src/assets", "output": "assets/tools/" },
+              { "glob": "**/*", "input": "node_modules/tinymce", "output": "assets/tinymce/" }
             ],
             "styles": [
               "src/styles.scss"
@@ -53,7 +45,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumError": "2mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -109,16 +101,6 @@
               "src/styles.scss"
             ],
             "scripts": []
-          }
-        },
-        "deploy": {
-          "builder": "@angular/fire:deploy",
-          "options": {
-            "prerender": false,
-            "ssr": false,
-            "browserTarget": "horrea.github.io:build:production",
-            "firebaseProject": "horrea-2e5b4",
-            "firebaseHostingSite": "horrea-2e5b4"
           }
         }
       }
@@ -247,11 +229,7 @@
             "assets": [
               "projects/rex-blog/src/favicon.ico",
               "projects/rex-blog/src/assets",
-              {
-                "glob": "**/*",
-                "input": "node_modules/tinymce",
-                "output": "/tinymce/"
-              }
+              { "glob": "**/*", "input": "node_modules/tinymce", "output": "/tinymce/" }
             ],
             "styles": [
               "src/styles.scss"
@@ -349,11 +327,7 @@
             "assets": [
               "projects/rex-tools/src/favicon.ico",
               "projects/rex-tools/src/assets",
-              {
-                "glob": "**/*",
-                "input": "node_modules/tinymce",
-                "output": "/tinymce/"
-              }
+              { "glob": "**/*", "input": "node_modules/tinymce", "output": "/tinymce/" }
             ],
             "styles": [
               "src/styles.scss",
