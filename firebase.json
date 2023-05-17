@@ -28,12 +28,12 @@
       ],
       "rewrites": [
         {
-          "source": "**",
-          "destination": "/index.html"
-        },
-        {
           "source": "/templates",
           "destination": "/assets/tools/templates.json"
+        },
+        {
+          "source": "**",
+          "destination": "/index.html"
         }
       ]
     }
