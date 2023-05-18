@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "horrea-2e5b4"
+  },
+  "targets": {
+    "horrea-2e5b4": {
+      "hosting": {
+        "horrea.github.io": [
+          "horrea-2e5b4"
+        ]
+      }
+    }
+  }
+}

@@ -6,6 +6,15 @@ export interface Environment {
     githubTokenUrl: string;
     githubClientId: string;
     githubScopes: string;
+    firebase: {
+        apiKey: string;
+        authDomain: string;
+        projectId: string;
+        storageBucket: string;
+        messagingSenderId: string;
+        appId: string;
+        measurementId: string;
+    }
 }
 
 export const ENVIRONMENT = new InjectionToken<Environment>('ENVIRONMENT');
